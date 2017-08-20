@@ -1,0 +1,25 @@
+                <div class="container">
+                        <!-- Begin: testimonials 1 component -->
+                        <div class="c-content-testimonials-1" data-slider="owl">
+                            <!-- Begin: Title 1 component -->
+                            <div class="c-content-title-1">
+                                <h3 class="c-center c-font-white c-font-uppercase c-font-bold">What Our Customers Say</h3>
+                                <div class="c-line-center c-theme-bg"></div>
+                            </div>
+                            <!-- End-->
+                            <!-- Begin: Owlcarousel -->
+                            <div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-navigation-dots="true" data-slide-speed=18000 data-rtl="false">
+                                {{ range .Site.Params.testimonials }}
+                                <div class="item">
+                                    <div class="c-testimonial">
+                                        <p> <span class="c-font-24">“{{ .text }}”</span> </p>
+                                        <h3>
+                                            <span class="c-name c-theme">{{ .author }}</span>, {{ .title }}<br/>{{ .company }} </h3>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                            <!-- End-->
+                        </div>
+                        <!-- End-->
+                    </div>

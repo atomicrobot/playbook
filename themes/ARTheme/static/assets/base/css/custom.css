@@ -1,0 +1,99 @@
+.imagecontour {
+ padding: 10px; 
+ border: solid 1px #EFEFEF;
+ background-color: #FFFFFF;
+ }
+ 
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.c-logos .c-logo:nth-child(4n) {
+    border-right: none;
+    border-bottom: 1px solid #edeff0;
+}
+  .c-logos .c-logo:nth-last-child(4) {
+    border-bottom: none;
+}
+  .c-logos .c-logo:nth-last-child(3) {
+    border-bottom: none;
+}
+  .c-logos .c-logo:nth-last-child(2) {
+    border-bottom: none;
+}
+  .c-logos .c-logo:nth-last-child(1) {
+    border-bottom: none;
+}
+   
+@media (max-width: 1199px) {
+  /* <= 1199px */
+  .c-logos .c-logo:nth-child(4n) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 991px) {
+  /* <= 991px */
+  .c-logos .c-logo:nth-child(2n) {
+        border-right: none;
+        border-bottom: 1px solid #edeff0;
+    }
+     .c-logos .c-logo:nth-last-child(4) {
+        border-bottom: 1px solid #edeff0;
+    }
+     .c-logos .c-logo:nth-last-child(3) {
+        border-bottom: 1px solid #edeff0;
+    }
+     .c-logos .c-logo:nth-last-child(2) {
+        border-bottom: none;
+    }
+     .c-logos .c-logo:nth-last-child(1) {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+  /* >= 768px */
+.c-logos .c-logo:nth-child(2n) {
+      border-right: none;
+      border-bottom: 1px solid #edeff0;
+  }
+  .c-content-feature-13 .c-feature-13-container {
+  padding: 30px; }
+}
+
+@media (max-width: 767px) {
+  /* <= 767px */
+  .c-content-client-logos-1 {
+    padding: 0;
+    margin-top: 40px; }
+     .c-logos .c-logo:nth-last-child(2) {
+        border-bottom: 1px solid #edeff0;
+  }
+	.c-logos .c-logo:nth-last-child(1) {
+        border-bottom: none;
+  }  
+  .c-content-feature-13 .c-feature-13-container {
+  padding: 30px; }
+}

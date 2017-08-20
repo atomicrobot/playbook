@@ -1,0 +1,32 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Playbook"
+theme = "ARTheme"
+
+[params]
+keywords = ["App Developemnt", "Mobile Development", "iOS", "Android", "Xcode", "Mobile Strategy", "Mobile UI", "Mobile UX", "Cincinnati"]
+description = "We’re a Cincinnati-based mobile development consultancy that builds native iOS and Android apps for everyone from funded startups to the Fortune 100."
+
+[taxonomies]
+tag = "tags"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]
+    name = "Development"
+    weight = 20
+    identifier = "development"
+    url = "/development/"
+[[menu.main]]
+    name = "Design"
+    weight = 30
+    identifier = "design"
+    url = "/design/"
+[[menu.main]]
+    name = "Operations"
+    weight = 40
+    identifier = "operations"
+    url = "/operations/"

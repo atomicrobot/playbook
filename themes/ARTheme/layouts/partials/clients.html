@@ -1,0 +1,21 @@
+ <!-- BEGIN: CLIENT LOGOS -->
+            <div class="container">
+                <div class="c-content-client-logos-slider-1" data-slider="owl">
+                    <div class="c-content-title-1">
+                        <h3 class="c-center c-font-uppercase c-font-bold">Featured Clients</h3>
+                        <div class="c-line-center c-theme-bg"></div>
+                    </div>
+                    <div class="c-content-client-logos-1">
+                        <div class="c-logos">
+                            <div class="row">
+                                {{ range .Site.Params.clients }}
+                                <div class="col-md-3 col-sm-6 col-xs-12 c-logo c-logo-1 item">
+                                    <img class="" src="{{ .logo }}" alt="" />
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- END: CLIENT LOGOS -->
