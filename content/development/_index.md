@@ -6,7 +6,7 @@ title = "Development Process"
 
 # Development Stacks
 
-The majority of our development practices were first detailed in Kent Beck's classic Extreme Programming Explained: Embrace Change and in Gerald Weinberg's The Psychology of Computer Programming. We've tried its practices and found that using most of the practices most of the time improves the quality of our work and happiness of our team.
+Atomic Robot specializes in native app development for iOS and Android.
 
 <dl>
   <dt><a href="/development/ios/">iOS</a></dt>
@@ -66,7 +66,7 @@ Our approach is based on a series of short iterations and delivery cycles that g
 
 # Core Practices
 
-The majority of our development practices were first detailed in Kent Beck's classic Extreme Programming Explained: Embrace Change and in Gerald Weinberg's The Psychology of Computer Programming. We've tried its practices and found that using most of the practices most of the time improves the quality of our work and happiness of our team.
+We leverage the following core practices inspired from Extreme Programming, Scrum and Kanban in our development process.
 
 <dl>
   <dt><a href="/development/practices/planning-board/">Planning Board</a></dt>
@@ -80,12 +80,6 @@ The majority of our development practices were first detailed in Kent Beck's cla
 
   <dt><a href="/development/practices/continuous-integration/">Continuous Integration</a></dt>
   <dd>On every commit our CI server builds and tests the app providing immediate feedback if a build fails</dd>
-
-  <dt><a href="/development/practices/peer-reviews/">Peer Review</a></dt>
-  <dd> </dd>
-
-  <dt><a href="/development/practices/style-guide/">Style Guide</a></dt>
-  <dd> </dd>
 
   <dt><a href="/development/practices/test-driven-development/">Test-Driven Development</a></dt>
   <dd>We leverage automated tests where appropriate to improve quality, influence good software design and reduce long, repetitive manual testing cycles</dd>

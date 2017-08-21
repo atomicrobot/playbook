@@ -1,14 +1,14 @@
 +++
 date = "2017-05-12T06:46:57-04:00"
-title = "iOS New"
+title = "iOS"
 
 +++
 
 # Swift
 
-All new projects on iOS use the latest production version of Swift. Apple continues to increase their commitment to Swift and Swift prevents a number of common programming errors. Our iOS developers also must be well versed in Objective-C for interopperable with existing frameworks and support of legacy projects.
+All new iOS projects at Atomic Robot use the latest production version of Swift. Swift is Apple's preferred programming language due to its safety and productivity features. iOS developers at Atomic Robot must also be well versed in Objective-C for interopperability with existing frameworks and support of legacy projects.
 
-See the [iOS Style Guide](style-guide)
+See our [iOS Style Guide](style-guide)
 
 # Standard Dependencies
 
@@ -28,7 +28,7 @@ Supplemental static analysis
 
 ## [Fabric](https://fabric.io/kits/ios/) 
 
-Crash reporting
+If an app crashes, we want to be the first to know - whether in development or production
 
 ## [Fastlane](https://fastlane.tools)
 
