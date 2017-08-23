@@ -11,21 +11,22 @@
     {{ partial "page-header.html" . }}
 
     <!-- BEGIN: PAGE CONTENT -->
-    <div class="c-layout-page">
+    <div class="c-layout-page c-bg-white">
         <!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
-        <div class="c-layout-breadcrumbs-1 c-subtitle c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
+        <div class="row c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both c-bg-grey-1">
             <div class="container">
-                <div class="c-page-title c-pull-left">
-                    <h3 class="c-font-uppercase c-font-sbold">{{ .Title }}</h3>
-                    <h4 class="">Atomic Robot Playbook</h4>
+                <div class="c-content-box c-size-sm c-center">
+                    <h1 class="c-font-uppercase c-font-sbold">{{ .Title }}</h1>
+                    <h3 class="">Atomic Robot Playbook</h3>
                 </div>
             </div>
         </div>
-        <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
-        <!-- BEGIN: PAGE CONTENT -->
-        <div class="c-content-box c-size-md c-bg-white">
-            <div class="container">
-                {{ .Content }}
+
+        <div class="container" style="padding-top:30px;padding-bottom:30px;">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    {{ .Content }}
+                </div>
             </div>
         </div>
     </div>

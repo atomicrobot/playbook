@@ -14,24 +14,21 @@ See our [iOS Style Guide](style-guide)
 
 The following are common libraries and command line tools that we utilize on iOS projects. We try to keep our dependency on third-party libraries to a minimum. 
 
-## [CocoaPods](https://cocoapods.org)
+<dl>
+  <dt><a href="https://cocoapods.org">CocoaPods</a></dt>
+  <dd>Dependency management with support for Swift Frameworks and Objective C</dd>
 
-Dependency management with support for Swift Frameworks and Objective C
+  <dt><a href="https://github.com/mac-cain13/R.swift">R.swift</a></dt>
+  <dd>Runtime type safety for resources like strings, images, fonts and segues</dd>
 
-## [R.swift](https://github.com/mac-cain13/R.swift)
+  <dt><a href="https://github.com/realm/SwiftLint">SwiftLint</a></dt>
+  <dd>Supplemental static analysis</dd>
 
-Runtime type safety for resources like strings, images, fonts and segues
+  <dt><a href="https://fabric.io/kits/ios/">Fabric</a></dt>
+  <dd>If an app crashes, we want to be the first to know - whether in development or production</dd>
 
-## [SwiftLint](https://github.com/realm/SwiftLint)
-
-Supplemental static analysis
-
-## [Fabric](https://fabric.io/kits/ios/) 
-
-If an app crashes, we want to be the first to know - whether in development or production
-
-## [Fastlane](https://fastlane.tools)
-
-Build automation
+  <dt><a href="https://fastlane.tools">Fastlane</a></dt>
+  <dd>Build automation</dd>
+</dl>
 
 

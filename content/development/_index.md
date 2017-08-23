@@ -10,10 +10,10 @@ Atomic Robot specializes in native app development for iOS and Android.
 
 <dl>
   <dt><a href="/development/ios/">iOS</a></dt>
-  <dd>Anything in the master branch is always deployable. </dd>
+  <dd></dd>
 
   <dt><a href="/development/android/">Android</a></dt>
-  <dd>The develop branch is a long-lived branch and serves as a staging area for work in progress. Code is merged from develop to master when releasing new versions to production.</dd>
+  <dd></dd>
 
 </dl>
 
@@ -21,45 +21,41 @@ Atomic Robot specializes in native app development for iOS and Android.
 
 Our approach is based on a series of short iterations and delivery cycles that get your product to market fast. This provides for an earlier return on investment and of equal importance allows for the incorporation of customer feedback to improve the product.
 
-<div class="c-content-box c-size-md c-bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="c-content-step-1 c-opt-1">
-                    <div class="c-icon">
-                        <span class="c-hr c-hr-first">
-                    <span class="c-content-line-icon c-icon-14 c-theme"></span>
-                        </span>
-                    </div>
-                    <div class="c-title c-font-20 c-font-bold c-font-uppercase">DISCOVER</div>
-                    <div class="c-description c-font-17">A one week, focused workshop to rapidly define the product vision, wireframes and release plan</div>
-                    <a href="/development/process/discover/" class="btn btn-sm c-theme-btn c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">EXPLORE</a>
-                </div>
+<div class="row">
+    <div class="col-md-4 col-sm-6">
+        <div class="c-content-step-1 c-opt-1">
+            <div class="c-icon">
+                <span class="c-hr c-hr-first">
+            <span class="c-content-line-icon c-icon-14 c-theme"></span>
+                </span>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="c-content-step-1 c-opt-1">
-                    <div class="c-icon">
-                        <span class="c-hr">
-                    <span class="c-content-line-icon c-icon-21 c-theme"></span>
-                        </span>
-                    </div>
-                    <div class="c-title c-font-20 c-font-bold c-font-uppercase">BUILD</div>
-                    <div class="c-description c-font-17">The product development will be decomposed into weekly iteration delivering product features each week for review</div>
-                    <a href="/development/process/build/" class="btn btn-sm c-theme-btn c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">EXPLORE</a>
-                </div>
+            <div class="c-title c-font-20 c-font-bold c-font-uppercase">DISCOVER</div>
+            <div class="c-font-17">A one week, focused workshop to rapidly define the product vision, wireframes and release plan</div>
+            <a href="/development/process/discover/" class="btn btn-sm c-theme-btn c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">EXPLORE</a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="c-content-step-1 c-opt-1">
+            <div class="c-icon">
+                <span class="c-hr">
+            <span class="c-content-line-icon c-icon-21 c-theme"></span>
+                </span>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="c-content-step-1 c-opt-1">
-                    <div class="c-icon">
-                        <span class="c-hr c-hr-last">
-                    <span class="c-content-line-icon c-icon-32 c-theme"></span>
-                        </span>
-                    </div>
-                    <div class="c-title c-font-20 c-font-bold c-font-uppercase">LAUNCH</div>
-                    <div class="c-description c-font-17">Once the user stories for the release are implemented, the team focuses on preparing the app for production release </div>
-                    <a href="/development/process/launch/" class="btn btn-sm c-theme-btn c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">EXPLORE</a>
-                </div>
+            <div class="c-title c-font-20 c-font-bold c-font-uppercase">BUILD</div>
+            <div class="c-font-17">The product development will be decomposed into weekly iteration delivering product features each week for review</div>
+            <a href="/development/process/build/" class="btn btn-sm c-theme-btn c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">EXPLORE</a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <div class="c-content-step-1 c-opt-1">
+            <div class="c-icon">
+                <span class="c-hr c-hr-last">
+            <span class="c-content-line-icon c-icon-32 c-theme"></span>
+                </span>
             </div>
+            <div class="c-title c-font-20 c-font-bold c-font-uppercase">LAUNCH</div>
+            <div class="c-font-17">Once the user stories for the release are implemented, the team focuses on preparing the app for production release </div>
+            <a href="/development/process/launch/" class="btn btn-sm c-theme-btn c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">EXPLORE</a>
         </div>
     </div>
 </div>

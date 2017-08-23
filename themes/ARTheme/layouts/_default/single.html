@@ -11,74 +11,30 @@
 
     <!-- BEGIN: PAGE CONTENT -->
     <!-- BEGIN: PAGE CONTAINER -->
-        <div class="c-layout-page c-bg-white">
-            <!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
-            <div class="c-layout-breadcrumbs-1 c-subtitle c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
-                <div class="container">
-                    <div class="c-page-title c-pull-left">
-                        <h3 class="c-font-uppercase c-font-sbold">{{ .Title }}</h3>
-                        <h4 class="">Atomic Robot Playbook</h4>
-                    </div>
-                </div>
-            </div>
-                </div>
-            </div>
-            <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
-
-            
+    <div class="c-layout-page c-bg-white">
+        <!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
+        <div class="row c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both c-bg-grey-1">
             <div class="container">
-                
-
-                <div class="c-layout-sidebar-menu c-theme ">
-                    <div class="c-padding-20 c-bg-grey-1 c-bg-img-bottom-right" >
-                        <div class="c-content-title-1 c-margin-t-20">
-                            <h3 class="c-font-uppercase c-font-bold">Contents</h3>
-                            <div class="c-line-left"></div>
-                            {{.TableOfContents}}
-                        </div>
-                    </div>
-                    <!-- BEGIN: LAYOUT/SIDEBARS/SIDEBAR-MENU-1 -->
-                    <!-- <ul class="c-sidebar-menu collapse c-option-2" id="sidebar-menu-1">
-                        <li class="c-dropdown c-active c-open">
-                            <a href="javascript:;" class="c-toggler">Active Section
-                                <span class="c-arrow"></span>
-                            </a>
-                            <ul class="c-dropdown-menu">
-                                <li class="c-active">
-                                    <a href="/discover/">Discover</a>
-                                </li>
-                                <li>
-                                    <a href="/build/">Build</a>
-                                </li>
-                                <li>
-                                    <a href="/refine/">Refine</a>
-                                </li>
-                                <li>
-                                    <a href="/launch/">Launch</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul> -->
-                    
-                    <!-- END: CONTENT/BLOG/BLOG-SIDEBAR-1 -->
-                    <!-- END: LAYOUT/SIDEBARS/SIDEBAR-MENU-1 -->
-                </div>
-                <div class="c-layout-sidebar-content ">
-                    <!-- BEGIN: PAGE CONTENT -->
-                    {{ .Content }}
-
-                    
-                    
-                    <!-- END: PAGE CONTENT -->
+                <div class="c-content-box c-size-sm c-center">
+                    <h1 class="c-font-uppercase c-font-sbold">{{ .Title }}</h1>
+                    <h3 class="">Atomic Robot Playbook</h3>
                 </div>
             </div>
         </div>
-        <!-- END: PAGE CONTAINER -->
-   
+
+        <div class="container" style="padding-top:30px;padding-bottom:30px;">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
+
     <!-- END: PAGE CONTAINER -->
 
     {{ partial "footer.html" . }}
 </body>
 
 </html>
-
