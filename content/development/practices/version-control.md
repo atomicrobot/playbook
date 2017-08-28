@@ -6,7 +6,7 @@ title = "Version Control"
 
 # Github
 
-We leverage Github, the leading version control provider, to manage code and facilitate code reviews. 
+We leverage Github, the leading version control provider, to manage code and facilitate code reviews.
 
 # Simplified Git Flow
 
@@ -38,7 +38,9 @@ Branches are important when working with a team to isolate and manage all the di
 
 ## Create Feature Branch
 
-When beginning work on a new feature, bug fix or refactoring, start by creating a new branch off the _develop_ branch. 
+When beginning work on a new feature, bug fix or refactoring, start by creating a new branch off the _develop_ branch.
+
+**Do not create your own fork of the project repository.** This does not meet our security needs and can result in private repositories being made public. Create branches off of the organization owned repository only.
 
 Changes made on a _feature_ branch don't affect the _master_ or _develop_ branch, allowing work to be done in isolation, safe in the knowledge that the branch won't be merged until it's ready to be reviewed.
 
@@ -46,7 +48,7 @@ It's important that your new branch is created off of _develop_ when working on 
 
 ## Implement Changes
 
-Once your branch has been created, it's time to start making changes. 
+Once your branch has been created, it's time to start making changes.
 
 Work in small increments and commit at logical points throughout the day. Each commit has an associated commit message, which is a description explaining why a particular change was made.
 
@@ -60,15 +62,15 @@ See [Pull Request Prerequisites](../pull-request-prereq) for guidance on steps t
 
 ## Discuss and Review
 
-Once a _Pull Request_ has been opened, a team member start a code review. The reviewer can make comments and start discussions in line. 
+Once a _Pull Request_ has been opened, a team member start a code review. The reviewer can make comments and start discussions in line.
 
-Continue to make commits and push to the branch with any changes in response to the reviewer feedback. 
+Continue to make commits and push to the branch with any changes in response to the reviewer feedback.
 
 See [Pull Request Review Guidelines](../pull-request-review) for guidance on performing a code review.
 
 ## Squash and Merge
 
-Once a _Pull Request_ has been approved, it can be squashed and merged into the _develop_ branch. 
+Once a _Pull Request_ has been approved, it can be squashed and merged into the _develop_ branch.
 Now that your changes have been verified in production, it is time to merge your code into the master branch.
 
 Clean up the old feature branch both on the remote and the local workspace.
@@ -76,4 +78,3 @@ Clean up the old feature branch both on the remote and the local workspace.
 ## Tag and Release
 
 Once the _develop_ branch is considered complete and passes all tests, it can merged with _master_. Create a new tag on _master_ for the version number and release create a new release.
-
