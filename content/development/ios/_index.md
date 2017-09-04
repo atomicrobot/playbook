@@ -8,7 +8,13 @@ title = "iOS"
 
 All new iOS projects at Atomic Robot use the latest production version of Swift. Swift is Apple's preferred programming language due to its safety and productivity features. iOS developers at Atomic Robot must also be well versed in Objective-C for interopperability with existing frameworks and support of legacy projects.
 
-See our [iOS Style Guide](style-guide)
+See our [Swift Style Guide](style-guide)
+
+# Starter Project
+
+Our stater project repo can be used to generate a new iOS project that contains many of common tools and conventions. 
+
+See our [iOS Starter Project](https://github.com/madebyatomicrobot/ios-starter-project)
 
 # Standard Dependencies
 

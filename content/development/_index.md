@@ -15,6 +15,8 @@ Atomic Robot specializes in native app development for iOS and Android.
   <dt><a href="/development/android/">Android</a></dt>
   <dd></dd>
 
+  <dt><a href="/development/rest/">REST API</a></dt>
+  <dd></dd>
 </dl>
 
 # Agile Process
@@ -50,7 +52,7 @@ Our approach is based on a series of short iterations and delivery cycles that g
         <div class="c-content-step-1 c-opt-1">
             <div class="c-icon">
                 <span class="c-hr c-hr-last">
-            <span class="c-content-line-icon c-icon-32 c-theme"></span>
+                    <span class="c-content-line-icon c-theme"></span>
                 </span>
             </div>
             <div class="c-title c-font-20 c-font-bold c-font-uppercase">LAUNCH</div>
