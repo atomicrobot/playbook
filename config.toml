@@ -25,8 +25,3 @@ tag = "tags"
     weight = 30
     identifier = "design"
     url = "/design/"
-[[menu.main]]
-    name = "Operations"
-    weight = 40
-    identifier = "operations"
-    url = "/operations/"
