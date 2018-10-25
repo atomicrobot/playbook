@@ -1,0 +1,11 @@
+<style>
+#TableOfContents > ul > li {
+  list-style: none;
+  
+}
+#TableOfContents > ul {
+    padding: 0;
+}
+</style>
+
+{{ .TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}

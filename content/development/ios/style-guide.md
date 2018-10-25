@@ -100,7 +100,7 @@ APIClient.fetch { [weak self] result in
 }
 ```
 
-# Formatting
+## Formatting
 
 Example:
 

@@ -1,0 +1,15 @@
+                            <!-- BEGIN: CONTENT/BLOG/BLOG-SIDEBAR-1 -->
+							
+                            <div class="c-content-ver-nav">
+                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+                                    <h3 class="c-font-bold c-font-uppercase">Categories</h3>
+                                    <div class="c-line-left c-theme-bg"></div>
+                                </div>
+                                <ul class="c-menu c-arrow-dot1 c-theme">
+                                   {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                                        <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ lower ($name | humanize) }} ( {{$taxonomy.Count}} )</a></li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                            
+                            <!-- END: CONTENT/BLOG/BLOG-SIDEBAR-1 -->

@@ -1,94 +1,48 @@
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
 
-    {{ partial "header.html" . }}
-   
-     <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-fullscreen c-layout-header-topbar">
+<head>
+    {{ partial "head.html" . }}
+</head>
 
-        {{ partial "page-header.html" . }}
+<body>
+    <!-- Navigation 20 -->
 
-        <!-- BEGIN: PAGE CONTENT -->
-        <div class="c-layout-page">
-            <div class="c-font-uppercase">
-            {{ partial "breadcrumbs.html" . }}
+    {{ partial "navigation.html" . }}
+
+    <!-- Content 4 -->
+    <section class="content_1 bg_white padding_top100 padding_bottom20">
+        <div class="container nopadding max_width970">
+            <div class="text-center inner">
+                <h2 class="font62 black top30 light font_second">{{ .Title }}</h2>
             </div>
-            <!-- BEGIN: PAGE CONTENT -->
-            <!-- BEGIN: BLOG LISTING -->
-            <div class="c-content-box c-size-md">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <div class="c-content-blog-post-1-list">
-								
-                                    {{ $pag := .Paginate ( .Data.Pages.ByPublishDate ) 8 }}
-                                    
-                                    {{ range $pag.Pages }}
-                                <div class="c-content-blog-post-1">
-									{{ if .Params.image }}
-                                    <div class="c-media">
-                                         <a href="{{ .Permalink }}"><img src="{{ .Params.image }}"  class="img-responsive" /></a>
-                                    </div>
-									{{ end }}
-                                    <div class="c-title c-font-bold c-font-uppercase">
-                                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                                    </div>
-                                    <div class="c-desc"> 
-									{{ .Params.description }}
-                                    </div>
-                                    <div class="c-panel">
-                                        <div class="c-author">
-                                            By <span class="c-font-uppercase">{{ .Params.author }}</span>
-                                            on <span class="c-font-uppercase">{{ .Date.Format "2 Jan 2006" }}</span>
-                                        </div>
-										{{ if .Params.tags }}
-	                                        <ul class="c-tags c-theme-ul-bg">
-											{{ range .Params.tags }}
-												<li>{{ . }}</li>
-											{{ end }}
-	                                        	</ul>
-										{{ end }}
-                                    </div>
-                                </div>
-					            {{ end }}
-								
-                                <div class="c-pagination">
-                                    <ul class="c-content-pagination c-theme">
-										{{ if $pag.HasPrev }}
-                                         <li class="c-prev">
-                                             <a href="{{ $pag.Prev.URL }}">
-                                                 <i class="fa fa-angle-left"></i>
-                                             </a>
-                                         </li>
-										 {{ end }}
-
-										{{ if $pag.HasNext }}
-                                        <li class="c-next">
-                                            <a href="{{ $pag.Next.URL }}">
-                                                <i class="fa fa-angle-right"></i>
-                                            </a>
-                                        </li>
-										 {{ end }}
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-
-					        {{ partial "blog-sidebar.html" . }}
-                            
-                        </div>
-                    </div>
+        </div>
+    </section>
+    <div class="feature_49 bg_white padding_top90 padding_bottom80">
+        <div class="container nopadding dark_gray">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 main">
+                    <article>
+                        {{ .Content }}
+                    </article>
+                </div>
+                <div class="col-xl-4 col-lg-5 sidebar">
+                    <sidebar>
+                        <div class="bottom25 top40 font14 semibold uppercase spacing15 opacity7 title">CONTENTS</div>
+                        
+                        {{ partial "toc.html" . }} 
+                    </sidebar>
                 </div>
             </div>
-            <!-- END: BLOG LISTING  -->
-            {{ partial "subscribe-bar.html" . }}
-            <!-- END: PAGE CONTENT -->
         </div>
-        <!-- END: PAGE CONTAINER -->
-       {{ partial "footer.html" . }}
-    </body>
+    </div>
+
+
+    {{ partial "cta.html" . }} 
+    {{ partial "footer.html" . }} 
+    {{ partial "scripts.html" . }}
+
+</body>
+
 </html>
+

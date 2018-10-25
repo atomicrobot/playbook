@@ -10,7 +10,7 @@
                             <div class="row">
                                 {{ range .Site.Params.clients }}
                                 <div class="col-md-3 col-sm-6 col-xs-12 c-logo c-logo-1 item">
-                                    <img class="" src="{{ .logo }}" alt="" />
+                                    <img class="" src="{{ .logo }}" alt="{{ .name }}" />
                                 </div>
                                 {{ end }}
                             </div>

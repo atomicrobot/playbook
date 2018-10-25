@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
-<!-- BEGIN HEAD -->
-{{ partial "header.html" . }}
 
-<body class="c-layout-header-fixed c-layout-header-mobile-fixed">
-    {{ partial "page-header.html" . }}
+<head>
+    {{ partial "head.html" . }}
+</head>
 
-    <!-- BEGIN: PAGE CONTENT -->
-    <!-- BEGIN: PAGE CONTAINER -->
-    <div class="c-layout-page c-bg-white">
-        <!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
-        <div class="row c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both c-bg-grey-1">
-            <div class="container">
-                <div class="c-content-box c-size-sm c-center">
-                    <h1 class="c-font-uppercase c-font-sbold">{{ .Title }}</h1>
-                    <h3 class="">Atomic Robot Playbook</h3>
-                </div>
+<body>
+    <!-- Navigation 20 -->
+
+    {{ partial "navigation.html" . }}
+
+    <!-- Content 4 -->
+    <section class="content_1 bg_white padding_top100 padding_bottom20">
+        <div class="container nopadding max_width970">
+            <div class="text-center inner">
+                <h2 class="font62 black top30 light font_second">{{ .Title }}</h2>
             </div>
         </div>
-
-        <div class="container" style="padding-top:30px;padding-bottom:30px;">
-            <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-                    {{ .Content }}
+    </section>
+    <div class="feature_49 bg_white padding_top90 padding_bottom80">
+        <div class="container nopadding dark_gray">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 main">
+                    <article>
+                        {{ .Content }}
+                    </article>
+                </div>
+                <div class="col-xl-4 col-lg-5 sidebar">
+                    <sidebar>
+                        <div class="bottom25 top40 font14 semibold uppercase spacing15 opacity7 title">CONTENTS</div>
+                        
+                        {{ partial "toc.html" . }} 
+                    </sidebar>
                 </div>
             </div>
         </div>
     </div>
-    <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
 
-    <!-- END: PAGE CONTAINER -->
 
-    {{ partial "footer.html" . }}
+    {{ partial "cta.html" . }} 
+    {{ partial "footer.html" . }} 
+    {{ partial "scripts.html" . }}
+
 </body>
 
 </html>
+

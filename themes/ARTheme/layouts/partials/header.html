@@ -2,7 +2,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Atomic Robot | {{ .Page.Title }}</title>
+        <title>Playbook | {{ .Page.Title }}</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -33,4 +33,24 @@
         <link href="/blog/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
         <!-- END THEME STYLES -->
         <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@atomic_robot">
+        <meta name="twitter:title" content="{{ .Page.Title }}">
+        <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{  .Site.Params.description }}{{ end }}">
+        <meta name="twitter:creator" content="@atomic_robot">
+        {{ if .Params.image }}
+        <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+        {{ end }}
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="{{ .Page.Title }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{ .Permalink }}" />
+        {{ if .Params.image }}
+        <meta property="og:image" content="{{ .Params.image | absURL }}" />
+        {{ end }}
+        <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{  .Site.Params.description }}{{ end }}" /> 
+        <meta property="og:site_name" content="Atomic Robot" />
 	</head>

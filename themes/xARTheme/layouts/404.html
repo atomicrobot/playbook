@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+{{ partial "header.html" . }}
+
+ <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-fullscreen c-layout-header-topbar">
+
+        {{ partial "page-header.html" . }}
+
+        <!-- BEGIN: PAGE CONTENT -->
+        <div class="c-layout-page c-font-uppercase">
+        {{ partial "breadcrumbs.html" . }}
+        <!-- BEGIN: PAGE CONTENT -->
+        <div class="c-content-box c-size-lg c-bg-white" style="height:600px">
+            <div class="container c-center" style="margin-top:140px;">
+                <!-- End-->
+                <p class="c-font-48 c-center">This is not the page you are looking for.</p>
+                <a href="/" class="btn btn-xlg c-btn-blue c-btn-square c-btn-uppercase c-center">Return to Home</a>
+            </div>
+        </div>
+        </div>
+    <!-- END: PAGE CONTAINER -->
+
+    {{ partial "footer.html" . }}
+    <!-- BEGIN: PAGE SCRIPTS -->
+    <!-- END: PAGE SCRIPTS -->
+</body>
+
+</html>

@@ -1,63 +1,70 @@
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
-<!-- BEGIN HEAD -->
-{{ partial "header.html" . }}
+<html lang="en"> 
+	<head>
+		<meta charset="utf-8" >
+		<title>Atomic Robot | Playbook</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="/i/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-<body class="c-layout-header-fixed c-layout-header-mobile-fixed">
-
-    <!-- <body class="c-bg-blue-1  c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-fullscreen c-layout-header-topbar"> -->
-    {{ partial "page-header.html" . }}
-    <div class="c-layout-page c-bg-white">
-        <!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-2 -->
-
-        <div class="container" style="padding-top:30px;padding-bottom:30px;">
-                <div class="c-content-box c-size-lg c-bg-img-top" style="background-image: url(../../assets/base/img/content/backgrounds/bg-65.jpg)">
-                    <div class="container">
-                        <div class="c-content-feature-6">
-                            <!-- Begin: Title 1 component -->
-                            <div class="c-content-title-1">
-                                <h3 class="c-font-uppercase c-center c-font-thin">Atomic Robot <strong>Playbook</strong></h3>
-                                <div class="c-line-center c-theme-bg"></div>
-                            </div>
-                            <!-- End-->
-                            <ul class="c-list">
-                                <li>
-                                    <div class="c-card c-bg-opacity-1 c-bg-blue-2">
-                                        <h1 class="c-font-uppercase c-font-bold c-font-white c-center">Development Process</h1>
-                                        <p class="c-font-white c-center">
-                                           
-                                        </p>
-                                        <div class="c-center">
-                                        <a href="/development/" class="btn btn-lg c-btn-white c-font-uppercase c-btn-square c-btn-border-1x">LEARN MORE</a>
-                                    </div>
-                                    </div>	
-                                </li>
-                                <li>
-                                    <div class="c-card c-bg-opacity-1 c-bg-blue-2">
-                                        <h1 class="c-font-uppercase c-font-bold c-font-white c-center">Design Guidelines</h1>
-                                        <p class="c-font-white c-center">
-                                            
-                                        </p>
-                                        <div class="c-center">
-                                        <a href="/design/" class="btn btn-lg c-btn-white c-font-uppercase c-btn-square c-btn-border-1x">LEARN MORE</a>
-                                        </div>
-                                    </div>	
-                                </li>
-                            </ul>
-                        </div>
-                    </div> 
-                </div>
-        </div>
-    </div>
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900|Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet" />
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+	</head> 
+	<body>
 
 
+<!-- Header 18 -->
 
-    <!-- END: PAGE CONTAINER -->
+{{ partial "navigation.html" . }}
+<section class="content_1 bg_white padding_top100 padding_bottom20">
+	<div class="container nopadding max_width970">
+		<div class="text-center inner">
+			<h2 class="font62 black top30 light font_second">This is our playbook.</h2>
+			<div class="max_width770 margin_auto top35 font22 light dark_blue text">
+				We are an independent digital agency that builds engaging mobile app experiences for all types of companies; from innovative startups to Fortune 500 companies.
+			</div>
+		</div>
+	</div>
+</section>
+<div class="feature_48 bg_white padding_bottom80">
+	
+	
+	<article class="padding_top65">
+		<div class="container nopadding dark_gray">
+			<div class="max_width770 margin_auto">
+				<h2>App Development</h2>
+				<p>We specialize in native app development for iOS & Android.</p>
+				<ul>
+					<li><a href="/development/">Overview</a></li>
+					<li><a href="/development/ios/">iOS</a></li>
+					<li><a href="/development/android/">Android</a></li>
+					<li><a href="/development/rest/">REST API</a></li>
+				</ul>
+				<h2>UI/UX Design</h2>
+				<p>We have an award winning design team focused on designing engaging app experiences.</p>
+				<ul>
+					<li><a href="/design/#design-process">Process</a></li>
+					<li><a href="/design/#design-tools">Tools</a></li>
+					<li><a href="/design/#resources">Resources</a></li>
+					<li><a href="/design/sketch/">Sketch Best Practices</a></li>
+				</ul>
+			</div>
+		</div>
+	</article>
+</div>
 
-    {{ partial "footer.html" . }}
-</body>
+{{ partial "footer.html" . }}
 
+
+
+
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/aos.min.js"></script>
+	<script src="/js/jquery.maskedinput.min.js"></script>
+	<script src="/js/script.js"></script>
+
+	</body>
 </html>

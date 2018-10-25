@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    <!-- Navigation 20 -->
+
+    {{ partial "navigation.html" . }}
+
+    <!-- Content 4 -->
+
+    
+<div class="feature_49 bg_white padding_top90 padding_bottom80">
+	<div class="container nopadding dark_gray">
+		<div class="row justify-content-between">
+			<div class="col-lg-7 main">
+				<article>
+                        {{ if .Params.image }}
+                        <p><img src="{{ .Params.image }}" alt="" /></p>
+                        {{ end }}
+					<h1 class="font42 font_second light" href="{{ .Permalink }}">{{ .Title }}</h1>
+					<div class="top10 bottom35 font14 semibold uppercase spacing15 opacity3 date"> By {{ .Params.author }} on {{ .Date.Format "2 Jan 2006" }}</div>
+                    {{ .Content }}
+                </article>
+			</div>
+			<div class="col-xl-4 col-lg-5 sidebar">
+				<sidebar>
+                    <div class="bottom25 font14 semibold uppercase spacing15 opacity7 title">Categories</div>
+                    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                    <div class="bottom30 block">
+                        <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ lower ($name | humanize) }} ( {{$taxonomy.Count}} )</a>
+                    </div>
+                    {{ end }}
+					<div class="bottom40 padding_sides30 padding_top30 padding_bottom30 radius10 newsletter">
+						<div class="font18 semibold newsletter_title">Newsletter</div>
+						<div class="font18 light opacity3 newsletter_description">Get our news earlier, let’s get in touch.</div>
+						<form action="/form-handler.php" method="POST" class="top20 flex">
+							<input type="email" name="email" class="input size50 width255 radius6 noradius_right border border_light_gray noborder_right focus_green padding_sides20" placeholder="Your e-mail" required />
+							<button class="width50 btn size50 green radius6 noradius_left text-center"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+                    
+                    {{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<div class="bottom25 font14 semibold uppercase spacing15 opacity7 title">Related</div>
+<div class="slider dots_dark_blue dots-40 slider_on_md"> 
+    {{ range . }}
+    <div class="bottom30 block">
+            <a href="{{ .RelPermalink }}" class="flex justify_start">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" alt="" class="width160 height90 radius8" />
+                {{ end }}
+                <div class="left20 max_width170 inner">
+                    <div class="font16 line_height22 post_title">{{ .Title }}</div>
+                    <div class="top10 font14 semibold uppercase spacing15 opacity3 post_date">{{ .Date.Format "2 Jan 2006" }}</div>
+                </div>
+            </a>
+        </div>
+    {{ end }}
+</div>
+<a href="#" class="link blue">View More <i class="fas fa-angle-right left10"></i></a>
+{{ end }}
+					
+				</sidebar>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="call_to_action_30 bg_white padding_top110">
+        <div class="container nopadding dark_gray">
+            <img srcset="/i/call_to_action_30_bg.png 1x, /i/call_to_action_30_bg_2x.png 2x" src="/i/call_to_action_30_bg.png" class="absolute left680 height_full bg" alt="" />
+            <div class="relative max_width630 padding_top5 padding_bottom95 text-center text-lg-left inner">
+                <h2 class="bottom25 font42 font_second light">They made signs for me to come down from the rock, and go</h2>
+                <div class="font22 light opacity7 text">Now the races of these two have been for some ages utterly extinct, and besides.</div>
+                <div class="top60 flex justify_start buttons">
+                    <a href="#" class="right30 bottom10 btn size50 blue min_width170 radius6 padding_sides20">Get a License</a>
+                    <a href="#" class="btn size50 transparent_blue border border_blue min_width170 radius6 padding_sides20">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial "footer.html" . }} {{ partial "scripts.html" . }}
+
+</body>
+
+</html>
+

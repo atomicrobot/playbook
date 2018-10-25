@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+    {{ partial "header.html" . }}
+
+ <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-fullscreen c-layout-header-topbar c-bg-red-2">
+
+        {{ partial "page-header.html" . }}
+
+        <!-- BEGIN: PAGE CONTENT -->
+        <div class="c-layout-page">
+            {{ partial "breadcrumbs.html" . }}
+            <!-- BEGIN: PAGE CONTENT -->
+            <!-- BEGIN: BLOG LISTING -->
+            <div class="c-content-box c-size-md">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="c-content-blog-post-1-view">
+                                <div class="c-content-blog-post-1">
+									{{ if .Params.image }}
+                                    <div class="c-media">
+                                        <img src="{{ .Params.image }}"  class="img-responsive" />
+                                    </div>
+									{{ end }}
+                                    <div class="c-desc">
+                                        {{ .Content }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: BLOG LISTING  -->
+            <!-- END: PAGE CONTENT -->
+        </div>
+        <!-- END: PAGE CONTAINER -->
+		{{ partial "footer.html" . }}
+    </body>
+
+</html>
