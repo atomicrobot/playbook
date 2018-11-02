@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://playbook.atomicrobot.com/"
 languageCode = "en-us"
 title = "Playbook"
 theme = "ARTheme"
